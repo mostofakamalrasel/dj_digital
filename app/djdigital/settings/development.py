@@ -6,7 +6,7 @@ from .base import *
 
 DEBUG = True
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(' ')
 
 ################################
 ##      WSGI CONFIGURATION    ##
